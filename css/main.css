@@ -11,19 +11,31 @@ body {
     width: 100%;
 }
 
-#info {
+/*#info {
     z-index: 1000;
     position: absolute;
     width: 500px;
     top: 1%;
     bottom: 1%;
     left: .5%;
-    padding: 40px 15px 900px 15px;
+    padding: 40px 15px 100% 15px;
     background: #343a40;
     color: white;
 
-}
+}*/
 
+#info {
+    z-index: 1000;
+    position: absolute;
+    width: 500px;
+    top: 1%;
+    left: .5%;
+    padding: 40px 15px 15px 15px; /* Adjusted padding values */
+    background: #343a40;
+    color: white;
+    max-height: 93%; /* Set a maximum height for the panel */
+    overflow-y: auto; /* Add a scrollbar when content overflows */
+}
 
 /* social media icons */
 #info a {
